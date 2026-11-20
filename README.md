@@ -40,6 +40,20 @@ The dataset contains residential property information, including:
 
 ## Analysis Workflow
 
+## Model Performance
+
+The third multiple linear regression model was used to generate predictions on the test dataset.
+
+| Evaluation Metric | Result |
+|---|---:|
+| Root Mean Squared Error (RMSE) | 211,618.40 |
+| Mean Absolute Error (MAE) | 137,936.30 |
+| Test R-squared | 0.6675 (66.75%) |
+
+### Interpretation
+
+The model explains approximately 66.75% of the variation in house prices in the test dataset. The MAE indicates an average absolute prediction error of approximately INR 137,936, while the RMSE is approximately INR 211,618.
+
 1. **Descriptive Statistics:** Examining dataset structure, summary statistics, standard deviation, interquartile range and skewness.
 2. **Data Quality Checks:** Checking missing values and duplicate property IDs, formatting categorical variables and creating a renovation indicator.
 3. **Data Visualisation:** Producing five visualisations to explore house price distributions and relationships.
