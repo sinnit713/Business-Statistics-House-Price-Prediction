@@ -52,11 +52,20 @@ The dataset contains residential property information, including:
 
 The analysis includes five visualisations:
 
-1. Distribution of House Prices
-2. Price vs Living Area
-3. Average House Price by Grade
-4. House Prices by View Rating
-5. Price vs Distance from Airport
+### 1. Distribution of House Prices
+![Distribution of House Prices](visualisations/Distribution%20of%20House%20Prices.png)
+
+### 2. Price vs Living Area
+![Price vs Living Area](visualisations/Price%20vs%20Living%20Ares.png)
+
+### 3. Average House Price by Grade
+![Average House Price by Grade](visualisations/Avg%20House%20Price%20By%20Grade.png)
+
+### 4. House Prices by View Rating
+![House Prices by View Rating](visualisations/House%20Price%20By%20view%20Rating.png)
+
+### 5. Price vs Distance from Airport
+![Price vs Distance from Airport](visualisations/Price%20Vs%20Distance%20from%20Airport.png)
 
 ## Repository Structure
 
