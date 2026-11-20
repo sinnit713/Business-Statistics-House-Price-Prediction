@@ -62,6 +62,24 @@ The model explains approximately 66.75% of the variation in house prices in the 
 6. **Regression Modelling:** Developing three multiple linear regression models with different combinations of explanatory variables.
 7. **Model Evaluation:** Assessing predictions using RMSE, MAE and test R-squared.
 
+## Regression Model Comparison
+
+Three multiple linear regression models were evaluated using the same test dataset to compare their predictive performance.
+
+| Model | RMSE | MAE | Test R-squared |
+|---|---:|---:|---:|
+| Model 1 | 254,937.10 | 171,197.90 | 0.5174 |
+| Model 2 | 231,311.70 | 153,614.60 | 0.6027 |
+| Model 3 | 211,618.40 | 137,936.30 | 0.6675 |
+
+### Findings
+
+Model 3 achieved the best predictive performance, with the lowest RMSE and MAE and the highest test R-squared of approximately 66.75%.
+
+The comparison indicates that including living area, grade, view and year built provided better predictive performance than the alternative predictor combinations examined.
+
+Therefore, Model 3 was selected as the final regression model for this analysis.
+
 ## Visualisations
 
 The analysis includes five visualisations:
