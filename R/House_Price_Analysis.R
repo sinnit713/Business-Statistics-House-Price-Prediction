@@ -216,4 +216,32 @@ root_mean_squared_error
 mean_absolute_error
 test_r_squared
 
+# TASK 9: Comparison of Regression Models
 
+# Generate predictions from all three models
+pred_model1 <- predict(model1, newdata = test_data)
+pred_model2 <- predict(model2, newdata = test_data)
+pred_model3 <- predict(model3, newdata = test_data)
+
+# Function to calculate prediction metrics
+calculate_metrics <- function(actual, predicted) {
+  rmse <- sqrt(mean((actual - predicted)^2))
+  mae <- mean(abs(actual - predicted))
+  r_squared <- 1 - sum((actual - predicted)^2) /
+    sum((actual - mean(actual))^2)
+  
+  return(c(RMSE = rmse, MAE = mae, R_squared = r_squared))
+}
+
+# Compare all three models
+model_comparison <- data.frame(
+  Model = c("Model 1", "Model 2", "Model 3"),
+  rbind(
+    calculate_metrics(test_data$price, pred_model1),
+    calculate_metrics(test_data$price, pred_model2),
+    calculate_metrics(test_data$price, pred_model3)
+  )
+)
+
+# Display comparison results
+print(model_comparison)
